@@ -13,7 +13,7 @@ body {
 
 
 
-div#headerWrapper {
+#header {
     background-color: $primaryColor;
 }
 
@@ -22,13 +22,9 @@ header {padding: 0rem $gutter;
         display: grid;
         grid-template-columns: 120px auto;
 
-    header h1 {
-        margin: 0; margin-top: 1rem;
-    }
+header h1 {margin: 0; margin-top: 1rem;}
 
-    header h2 {
-        margin: 0; margin-top: 1rem;
-    }
+    header h2 {margin: 0; margin-top: 1rem;}
 
     h1 {
         margin: 0; 
@@ -44,27 +40,19 @@ header {padding: 0rem $gutter;
         font-weight: normal;
         font-weight: $regularWeight;
     }
-
 }
 
 
 
-
-div#navWrapper {
+#nav {
     background-color: green; width: 100%; float: left;
 }
 
 nav {
-    ul {
-        margin:0;
-        padding: 0;
-    }
-    li {
-        list-style-type: none;
-    }
+    ul {margin:0; padding: 0;}
+    li {list-style-type: none;}
 
-    li.active {
-        background-color: darken($textColor, 10%);
+    li.active {background-color: darken($textColor, 10%);
     }
 
     a {
@@ -81,17 +69,8 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-div#mainWrapper {
-    background-color: $primaryColor;
-    }
+#main {
+    background-color: $primaryColor;}
 
     main {
     background-color: $secondaryColor;
@@ -99,8 +78,8 @@ div#mainWrapper {
     min-height: 10rem;
 
     .hero {
-        width: 100%; margin-top: .5rem
-        ;}
+        width: 100%; margin-top: .5rem;
+    }
 
     h1 {
         margin: 0; padding-top: 1rem;
@@ -117,7 +96,7 @@ div#mainWrapper {
 
     figure.wallpaper figcaption {
         text-align: center; font-size: .75rem;
-    }
+        }
     }
 
      h1 {
@@ -130,17 +109,17 @@ div#mainWrapper {
     margin: 0;
     width: 100%;
     img {width: 100%;}
-    } //end figure
+    }
 
     figcaption {
     text-align: center;
     font-size: .8rem;
+        }
     }
-    } //end main
 
 
 
-div#footerWrapper {
+div#footer {
     background-color: green; width: 100%
 }
 
@@ -149,6 +128,7 @@ footer {
     padding: 1rem $gutter;
     color: white;
 }
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
