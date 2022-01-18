@@ -461,19 +461,16 @@ header {
   display: grid;
   grid-template-columns: 120px auto;
 }
-header header h1 {
-  margin: 0;
-  margin-top: 1rem;
-}
-header header h2 {
-  margin: 0;
-  margin-top: 1rem;
-}
 header h1 {
   margin: 0;
+  margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
   color: black;
+}
+header h2 {
+  margin: 0;
+  margin-top: 1rem;
 }
 header h2 {
   margin: 0;
