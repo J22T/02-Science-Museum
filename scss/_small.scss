@@ -50,27 +50,34 @@ body {
 // NAV
 
 .nav {
-    background-color: #111;
+        background-color: #111;
+        font-family: $fontFamily;
 
     ul {
-    margin: 0; padding: 0;
-    li {
-    list-style-type: none;
-    li:active {
-     background-color: #333;
+        margin: 0;
+        padding: 0;
     }
+
+    li {
+        list-style-type: none;
 
     a {
         display: block;
         padding: .8rem 0; /* 44 minimum height */
         color: #eee;
-        text-align: center;
+        text-align: left;
+        padding: .9rem 2vw;
         text-decoration: none;
+        border-top: solid 1px rgb(63, 63, 63);
     }
     :hover {
-        background-color: gray;
+        background-color: #333;
     }
 }
+    li.active {
+        background-color: #333;
+        }
+
 
 
 
@@ -133,4 +140,3 @@ footer {
   display: table;
   clear: both;
     }
-}

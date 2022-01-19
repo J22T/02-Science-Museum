@@ -479,30 +479,32 @@ body {
 
 .nav {
   background-color: #111;
-  /*----- Clearfix: Force an Element not to collapse -----*/
+  font-family: "Quicksand", sans-serif;
 }
 .nav ul {
   margin: 0;
   padding: 0;
 }
-.nav ul li {
+.nav li {
   list-style-type: none;
 }
-.nav ul li li:active {
-  background-color: #333;
-}
-.nav ul li a {
+.nav li a {
   display: block;
   padding: .8rem 0;
   /* 44 minimum height */
   color: #eee;
-  text-align: center;
+  text-align: left;
+  padding: .9rem 2vw;
   text-decoration: none;
+  border-top: solid 1px #3f3f3f;
 }
-.nav ul li :hover {
-  background-color: gray;
+.nav li :hover {
+  background-color: #333;
 }
-.nav ul main {
+.nav li.active {
+  background-color: #333;
+}
+.nav main {
   background-color: gray;
   background-color: #002900;
   padding: 1rem 2%;
@@ -511,33 +513,37 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.nav ul main .hero {
+.nav main .hero {
   width: 100%;
   margin-top: .5rem;
 }
-.nav ul main h1 {
+.nav main h1 {
   margin: 0;
   padding-top: 1rem;
   color: white;
   font-weight: 700;
 }
-.nav ul main .kids {
+.nav main .kids {
   height: 50%;
   width: 50%;
 }
-.nav ul main p {
+.nav main p {
   flex-basis: auto;
 }
-.nav .footer {
+
+.footer {
   background-color: #002900;
   width: 100%;
 }
-.nav footer {
+
+footer {
   text-align: center;
   padding: 1rem 2%;
   color: white;
 }
-.nav .clearfix:after {
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
