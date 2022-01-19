@@ -454,25 +454,22 @@ body {
 .header {
   background-color: white;
 }
-
-header {
+.header header {
   padding: 0rem 2%;
   padding: .5rem 1%;
   display: grid;
   grid-template-columns: 120px auto;
 }
-header h1 {
+.header header h1 {
   margin: 0;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
   color: black;
 }
-header h2 {
+.header header h2 {
   margin: 0;
   margin-top: 1rem;
-}
-header h2 {
   margin: 0;
   color: black;
   font-size: 1.3rem;
@@ -480,15 +477,11 @@ header h2 {
   font-weight: 300;
 }
 
-.nav {
-  /*----- Clearfix: Force an Element not to collapse -----*/
-}
 .nav ul li a {
   color: #333;
   text-decoration: none;
   display: block;
   padding: .9rem 2vw;
-  border-top: solid 1px rgba 0, 0, 0, 0.2;
   text-align: left;
 }
 .nav ul li a a:hover {
@@ -509,11 +502,10 @@ header h2 {
 }
 .nav .main {
   background-color: white;
-}
-.nav .main {
-  background-color: white;
+  background-color: #002900;
   padding: 1rem 2%;
   min-height: 10rem;
+  display: flex;
 }
 .nav .main .hero {
   width: 100%;
@@ -525,39 +517,24 @@ header h2 {
   color: white;
   font-weight: 700;
 }
-.nav .main figure img {
+.nav .main img {
   width: 100px;
   margin-top: 1rem;
 }
-.nav .main figure figure.wallpaper figcaption {
-  text-align: center;
-  font-size: .75rem;
-}
-.nav .main h1 {
-  color: black;
-  font-weight: 700;
-}
-.nav .main figure {
-  margin: 0;
+
+.footer {
+  background-color: #002900;
   width: 100%;
 }
-.nav .main figure img {
-  width: 100%;
-}
-.nav .main figcaption {
-  text-align: center;
-  font-size: .8rem;
-}
-.nav .footer {
-  background-color: green;
-  width: 100%;
-}
-.nav footer {
+
+footer {
   text-align: center;
   padding: 1rem 2%;
   color: white;
 }
-.nav .clearfix:after {
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -576,19 +553,20 @@ header h2 {
     border: none;
     padding: .5rem 1rem;
   }
-  nav nav
-  header h1 {
+  nav ul li a header h1 {
     font-size: 2rem;
     margin-top: 1rem;
   }
-  nav header h2 {
+  nav ul li a header h2 {
     font-size: 1.3rem;
     margin-top: 1rem;
   }
-  nav .hero {
+
+  .hero {
     width: 100%;
   }
-  nav main figure {
+
+  main figure {
     float: right;
     width: 50%;
     margin-left: 2%;
