@@ -509,9 +509,7 @@ body {
   background-color: #002900;
   padding: 1rem 2%;
   min-height: 10rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: block;
 }
 .nav main .hero {
   width: 100%;
@@ -524,11 +522,8 @@ body {
   font-weight: 700;
 }
 .nav main .kids {
-  height: 50%;
-  width: 50%;
-}
-.nav main p {
-  flex-basis: auto;
+  height: 40%;
+  width: 40%;
 }
 
 .footer {
@@ -552,7 +547,7 @@ footer {
 @media only screen and (min-width: 35rem) {
   nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 2%;
   }
   nav ul li {
@@ -596,21 +591,25 @@ footer {
     margin-top: 1rem;
   }
 
-  nav nav ul {
+  .nav ul {
     padding-left: 2%;
+    display: flex;
+    justify-content: center;
   }
-  nav nav ul {
-    padding-left: 2%;
-    justify-content: flex-start;
-  }
-  nav ul li a {
+  .nav ul li a {
     padding: .7rem 2rem;
     font-size: 1rem;
   }
 
+  main {
+    display: block;
+  }
   main .kids {
-    height: 50%;
     width: 50%;
+  }
+
+  footer {
+    background-color: black;
   }
 }
 /* end of media query */

@@ -14,26 +14,27 @@ header {
     }
 }
 
-nav {
-    nav ul {
+.nav {
+    ul {
     padding-left: 2%;
-}
+    display: flex;
+    justify-content: center;
 
-nav ul {
-    padding-left: 2%;
-    justify-content: flex-start;
-}
-
-    ul li a {
-    padding: .7rem 2rem;
-    font-size: 1rem;
+    li a {
+        padding: .7rem 2rem;
+        font-size: 1rem;
+    }
 }
 }
-
 
 main {
+    display: block;
+
     .kids {
-        height: 50%;
         width: 50%;
     }
+}
+
+footer {
+    background-color: black;
 }

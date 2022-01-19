@@ -91,9 +91,7 @@ main {
     background-color: $secondaryColor;
     padding: 1rem $gutter;
     min-height: 10rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
     
     .hero {
         width: 100%; margin-top: .5rem;
@@ -105,13 +103,11 @@ main {
         font-weight: $heavyWeight;
     }
 
-     .kids {
-            height: 50%;
-            width: 50%;
-        }
 
-        p {
-            flex-basis: auto;
+
+     .kids {
+            height: 40%;
+            width: 40%;
         }
     }
 } // END MAIN
