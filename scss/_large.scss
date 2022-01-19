@@ -1,42 +1,42 @@
 header, nav, main {
-        max-width: 1200px;
-        margin: auto;
-    }
+max-width: 1200px;
+margin: auto;
+}
 
-    // .hero {max-width: 100%;}
-    
-    nav ul li a {
-        padding: .7rem 2vw;
-        font-size: 1rem;
-    }
+.hero {max-width: 100%;}
 
-    nav ul li a {
-        padding: 2rem;
-        font-size: .8rem;
-    }
-    
-    nav ul {padding-left: 2%;}
-    nav li {width:auto;}
-    nav a {padding: .5rem 1rem;}
-
-    header h1 {
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
-    
-    header h2 {
-        font-size: 1.3rem;
-        margin-top: 1rem;
-    }
-    
-    main figure {
-        float: right; 
-        width: 33%; 
-        margin-left: 2%;
-        padding-bottom: 3rem;
-    }
-
-
+nav {
     nav ul {
-        justify-content: flex-start;
+    padding-left: 2%;
+}
+
+nav ul {
+    padding-left: 2%;
+    justify-content: flex-start;
+}
+
+    ul li a {
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+}
+
+header {
+    h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
     }
+    h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    }
+}
+
+main {
+    figure {
+    display: flex; 
+    width: 33%; 
+    margin-left: 2%;
+    padding-bottom: 3rem;
+}
+}

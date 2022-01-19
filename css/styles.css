@@ -489,38 +489,23 @@ header h2 {
   display: block;
   padding: .9rem 2vw;
   border-top: solid 1px rgba 0, 0, 0, 0.2;
-  text-align: center;
+  text-align: left;
 }
-.nav ul li a:hover {
+.nav ul li a a:hover {
+  background-color: darkgreen;
+}
+.nav ul li a ul li a:hover {
   background-color: #eee;
 }
-.nav ul li.active a {
+.nav ul li a ul li.active a {
   background-color: white;
 }
-.nav div#nav {
-  background-color: green;
-  width: 100%;
-  float: left;
-}
-.nav nav ul {
+.nav ul li a ul li.active a ul {
   margin: 0;
   padding: 0;
 }
-.nav nav li {
+.nav ul li a ul li.active a li {
   list-style-type: none;
-}
-.nav nav li.active {
-  background-color: #003100;
-}
-.nav nav a {
-  display: block;
-  padding: .7rem 0;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-.nav nav a:hover {
-  background-color: darkgreen;
 }
 .nav .main {
   background-color: white;
@@ -582,52 +567,28 @@ header h2 {
   nav ul {
     display: flex;
     justify-content: center;
+    margin-left: 2%;
+  }
+  nav ul li {
+    width: auto;
   }
   nav ul li a {
     border: none;
-  }
-
-  nav
-  li {
-    width: 25%;
-    float: left;
-  }
-
-  ul {
-    margin-left: 2%;
-  }
-
-  ul li {
-    width: auto;
-  }
-
-  ul li:first-child a {
-    border-left: 1px solid #777;
-  }
-
-  ul li:last-child a {
-    border-right: 1px solid #777;
-  }
-
-  ul li a {
     padding: .5rem 1rem;
   }
-
+  nav nav
   header h1 {
     font-size: 2rem;
     margin-top: 1rem;
   }
-
-  header h2 {
+  nav header h2 {
     font-size: 1.3rem;
     margin-top: 1rem;
   }
-
-  .hero {
+  nav .hero {
     width: 100%;
   }
-
-  main figure {
+  nav main figure {
     float: right;
     width: 50%;
     margin-left: 2%;
@@ -641,47 +602,36 @@ header h2 {
     margin: auto;
   }
 
-  nav ul li a {
-    padding: .7rem 2vw;
-    font-size: 1rem;
+  .hero {
+    max-width: 100%;
   }
 
-  nav ul li a {
-    padding: 2rem;
-    font-size: .8rem;
-  }
-
-  nav ul {
+  nav nav ul {
     padding-left: 2%;
   }
-
-  nav li {
-    width: auto;
+  nav nav ul {
+    padding-left: 2%;
+    justify-content: flex-start;
   }
-
-  nav a {
-    padding: .5rem 1rem;
+  nav ul li a {
+    padding: .7rem 2rem;
+    font-size: 1rem;
   }
 
   header h1 {
     font-size: 2rem;
     margin-top: 1rem;
   }
-
   header h2 {
     font-size: 1.3rem;
     margin-top: 1rem;
   }
 
   main figure {
-    float: right;
+    display: flex;
     width: 33%;
     margin-left: 2%;
     padding-bottom: 3rem;
-  }
-
-  nav ul {
-    justify-content: flex-start;
   }
 }
 /* end of media query */
