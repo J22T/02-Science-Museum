@@ -16,7 +16,7 @@ body {
 
 // HEADER
 .header {
-    background-color: $primaryColor;
+    background-color: white;
 
     header {
         padding: 0rem $gutter;
@@ -50,25 +50,30 @@ body {
 // NAV
 
 .nav {
-    ul li a {
-        color: #333;
-        text-decoration: none;
-        display: block;
-        padding: .9rem 2vw;
-        text-align: left;
+    background-color: #111;
 
-        a:hover {
-            background-color: darkgreen;}
-
-           ul li a:hover {background-color: #eee;}
-
-           ul li.active a {background-color: lighten($primaryColor, 40%);
-
-            ul {margin:0; padding: 0;}
-
-            li {list-style-type: none;}
+    ul {
+    margin: 0; padding: 0;
+    li {
+    list-style-type: none;
+    li:active {
+     background-color: #333;
     }
-} // END NAV
+
+    a {
+        display: block;
+        padding: .8rem 0; /* 44 minimum height */
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    }
+    :hover {
+        background-color: gray;
+    }
+}
+
+
+
 
 
 
@@ -80,6 +85,8 @@ main {
     padding: 1rem $gutter;
     min-height: 10rem;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     
     .hero {
         width: 100%; margin-top: .5rem;
@@ -94,6 +101,10 @@ main {
      .kids {
             height: 50%;
             width: 50%;
+        }
+
+        p {
+            flex-basis: auto;
         }
     }
 } // END MAIN
@@ -122,3 +133,4 @@ footer {
   display: table;
   clear: both;
     }
+}

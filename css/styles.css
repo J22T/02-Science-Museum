@@ -477,64 +477,67 @@ body {
   font-weight: 300;
 }
 
-.nav ul li a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: .9rem 2vw;
-  text-align: left;
+.nav {
+  background-color: #111;
+  /*----- Clearfix: Force an Element not to collapse -----*/
 }
-.nav ul li a a:hover {
-  background-color: darkgreen;
-}
-.nav ul li a ul li a:hover {
-  background-color: #eee;
-}
-.nav ul li a ul li.active a {
-  background-color: white;
-}
-.nav ul li a ul li.active a ul {
+.nav ul {
   margin: 0;
   padding: 0;
 }
-.nav ul li a ul li.active a li {
+.nav ul li {
   list-style-type: none;
 }
-.nav main {
-  background-color: white;
+.nav ul li li:active {
+  background-color: #333;
+}
+.nav ul li a {
+  display: block;
+  padding: .8rem 0;
+  /* 44 minimum height */
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+}
+.nav ul li :hover {
+  background-color: gray;
+}
+.nav ul main {
+  background-color: gray;
   background-color: #002900;
   padding: 1rem 2%;
   min-height: 10rem;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.nav main .hero {
+.nav ul main .hero {
   width: 100%;
   margin-top: .5rem;
 }
-.nav main h1 {
+.nav ul main h1 {
   margin: 0;
   padding-top: 1rem;
   color: white;
   font-weight: 700;
 }
-.nav main .kids {
+.nav ul main .kids {
   height: 50%;
   width: 50%;
 }
-
-.footer {
+.nav ul main p {
+  flex-basis: auto;
+}
+.nav .footer {
   background-color: #002900;
   width: 100%;
 }
-
-footer {
+.nav footer {
   text-align: center;
   padding: 1rem 2%;
   color: white;
 }
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
+.nav .clearfix:after {
   content: "";
   display: table;
   clear: both;
