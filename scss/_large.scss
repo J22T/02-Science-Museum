@@ -3,7 +3,16 @@ max-width: 1200px;
 margin: auto;
 }
 
-.hero {max-width: 100%;}
+header {
+    h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    }
+    h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    }
+}
 
 nav {
     nav ul {
@@ -21,22 +30,10 @@ nav ul {
 }
 }
 
-header {
-    h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    }
-    h2 {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-    }
-}
 
 main {
-    figure {
-    display: flex; 
-    width: 33%; 
-    margin-left: 2%;
-    padding-bottom: 3rem;
-}
+    .kids {
+        height: 50%;
+        width: 50%;
+    }
 }

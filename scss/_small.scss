@@ -74,16 +74,16 @@ body {
 
 
 // MAIN
-.main {
+main {
     background-color: $primaryColor;
     background-color: $secondaryColor;
     padding: 1rem $gutter;
     min-height: 10rem;
     display: flex;
-
+    
     .hero {
         width: 100%; margin-top: .5rem;
-   } 
+   }
 
     h1 {
         margin: 0; padding-top: 1rem;
@@ -91,11 +91,11 @@ body {
         font-weight: $heavyWeight;
     }
 
-    img {
-        width: 100px;
-        margin-top: 1rem;
+     .kids {
+            height: 50%;
+            width: 50%;
+        }
     }
-}
 } // END MAIN
 
 

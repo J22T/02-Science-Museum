@@ -500,26 +500,26 @@ body {
 .nav ul li a ul li.active a li {
   list-style-type: none;
 }
-.nav .main {
+.nav main {
   background-color: white;
   background-color: #002900;
   padding: 1rem 2%;
   min-height: 10rem;
   display: flex;
 }
-.nav .main .hero {
+.nav main .hero {
   width: 100%;
   margin-top: .5rem;
 }
-.nav .main h1 {
+.nav main h1 {
   margin: 0;
   padding-top: 1rem;
   color: white;
   font-weight: 700;
 }
-.nav .main img {
-  width: 100px;
-  margin-top: 1rem;
+.nav main .kids {
+  height: 50%;
+  width: 50%;
 }
 
 .footer {
@@ -566,11 +566,9 @@ footer {
     width: 100%;
   }
 
-  main figure {
-    float: right;
+  main .kids {
+    height: 50%;
     width: 50%;
-    margin-left: 2%;
-    padding-bottom: .5rem;
   }
 }
 /* end of media query */
@@ -580,8 +578,13 @@ footer {
     margin: auto;
   }
 
-  .hero {
-    max-width: 100%;
+  header h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  header h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
   }
 
   nav nav ul {
@@ -596,20 +599,9 @@ footer {
     font-size: 1rem;
   }
 
-  header h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
-  }
-  header h2 {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-  }
-
-  main figure {
-    display: flex;
-    width: 33%;
-    margin-left: 2%;
-    padding-bottom: 3rem;
+  main .kids {
+    height: 50%;
+    width: 50%;
   }
 }
 /* end of media query */
