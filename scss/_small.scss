@@ -85,7 +85,7 @@ main {
     min-height: 10rem;
 
     .hero {
-        max-width: 1rem;
+        max-width: 75rem;
     }
     
     h1 {
@@ -95,7 +95,7 @@ main {
     }
 
     .kids {
-        max-width: 1rem;
+        max-width: 75rem;
     }
     }
 }// END MAIN
@@ -105,7 +105,8 @@ main {
 
 // FOOTER
 .footer {
-    background-color: black; width: 100%
+    background-color: black;
+    width: 100%;
 }
 
 footer {

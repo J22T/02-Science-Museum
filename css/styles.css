@@ -502,7 +502,7 @@ body {
   min-height: 10rem;
 }
 .nav main .hero {
-  max-width: 1rem;
+  max-width: 75rem;
 }
 .nav main h1 {
   margin: 0;
@@ -511,7 +511,7 @@ body {
   font-weight: 700;
 }
 .nav main .kids {
-  max-width: 1rem;
+  max-width: 75rem;
 }
 
 .footer {
@@ -571,6 +571,13 @@ footer {
     margin-top: 1rem;
   }
 
+  main .hero {
+    max-width: 75rem;
+  }
+  main .kids {
+    max-width: 75rem;
+  }
+
   .clearfix:after {
     content: "";
     display: table;
@@ -609,6 +616,13 @@ footer {
   .nav ul li a {
     padding: .7rem 2rem;
     font-size: 1rem;
+  }
+
+  main .hero {
+    max-width: 75rem;
+  }
+  main .kids {
+    max-width: 75rem;
   }
 
   footer {
