@@ -495,22 +495,22 @@ template {
   .nav li.active {
     background-color: #333;
   }
-  .nav .main {
+  .nav main {
     padding: 1rem 2%;
     background-color: gray;
     min-height: 10rem;
   }
-  .nav .main .hero {
-    max-width: 100%;
+  .nav main .hero {
+    width: 50%;
   }
-  .nav .main h1 {
+  .nav main h1 {
     margin: 0;
     padding-top: 1rem;
     color: white;
     font-weight: 700;
   }
-  .nav .main .kids {
-    max-width: 100%;
+  .nav main .kids img {
+    width: 100%;
   }
 
   .footer {

@@ -77,13 +77,13 @@ body {
 
 
 // MAIN
-.main {
+main {
     padding: 1rem $gutter;
     background-color: $primaryColor;
     min-height: 10rem;
 
     .hero {
-        max-width: 100%;
+        width: 50%;
     }
     
     h1 {
@@ -93,9 +93,11 @@ body {
     }
 
     .kids {
-        max-width: 100%;
+        img {
+            width: 100%;
+        }
     }
-    }
+}
 }// END MAIN
 
 
