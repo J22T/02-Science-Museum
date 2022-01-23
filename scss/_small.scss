@@ -83,10 +83,9 @@ main {
     padding: 1rem $gutter;
     background-color: $primaryColor;
     min-height: 10rem;
-    display: block;
 
     .hero {
-        max-width: 30%;
+        max-width: 1rem;
     }
     
     h1 {
@@ -96,7 +95,7 @@ main {
     }
 
     .kids {
-        max-width: 30%;
+        max-width: 1rem;
     }
     }
 }// END MAIN

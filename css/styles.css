@@ -500,10 +500,9 @@ body {
   padding: 1rem 2%;
   background-color: gray;
   min-height: 10rem;
-  display: block;
 }
 .nav main .hero {
-  max-width: 30%;
+  max-width: 1rem;
 }
 .nav main h1 {
   margin: 0;
@@ -512,7 +511,7 @@ body {
   font-weight: 700;
 }
 .nav main .kids {
-  max-width: 30%;
+  max-width: 1rem;
 }
 
 .footer {
