@@ -26,14 +26,14 @@ body {
 
         h1 {
             margin: 0;
-            margin-top: 3rem;
+            margin-top: 2rem;
             font-size: 2rem;
             font-weight: $heavyWeight;
             color: black;
         }
 
         h2 {
-            display: none;
+            
         }
     }
 } // END HEADER
@@ -79,13 +79,13 @@ body {
 
 
 // MAIN
-main {
+.main {
     padding: 1rem $gutter;
     background-color: $primaryColor;
     min-height: 10rem;
 
     .hero {
-        max-width: 75rem;
+        max-width: 10px;
     }
     
     h1 {
@@ -95,7 +95,7 @@ main {
     }
 
     .kids {
-        max-width: 75rem;
+        max-width: 10px;
     }
     }
 }// END MAIN
@@ -107,13 +107,11 @@ main {
 .footer {
     background-color: black;
     width: 100%;
-}
-
-footer {
     text-align: center;
     padding: 1rem $gutter;
     color: white;
-} // END FOOTER
+}
+ // END FOOTER
 
 
 

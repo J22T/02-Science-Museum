@@ -462,13 +462,10 @@ body {
 }
 .header header h1 {
   margin: 0;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 2rem;
   font-weight: 700;
   color: black;
-}
-.header header h2 {
-  display: none;
 }
 
 .nav {
@@ -496,30 +493,27 @@ body {
 .nav li.active {
   background-color: #333;
 }
-.nav main {
+.nav .main {
   padding: 1rem 2%;
   background-color: gray;
   min-height: 10rem;
 }
-.nav main .hero {
-  max-width: 75rem;
+.nav .main .hero {
+  max-width: 10px;
 }
-.nav main h1 {
+.nav .main h1 {
   margin: 0;
   padding-top: 1rem;
   color: white;
   font-weight: 700;
 }
-.nav main .kids {
-  max-width: 75rem;
+.nav .main .kids {
+  max-width: 10px;
 }
 
 .footer {
   background-color: black;
   width: 100%;
-}
-
-footer {
   text-align: center;
   padding: 1rem 2%;
   color: white;
@@ -571,11 +565,17 @@ footer {
     margin-top: 1rem;
   }
 
-  main .hero {
-    max-width: 75rem;
+  .main {
+    display: flex;
+    flex-wrap: wrap;
   }
-  main .kids {
-    max-width: 75rem;
+  .main .hero {
+    width: 100vw;
+  }
+  .main .kids {
+    width: 45vw;
+    float: right;
+    margin: auto 0.5rem;
   }
 
   .clearfix:after {
@@ -618,11 +618,17 @@ footer {
     font-size: 1rem;
   }
 
-  main .hero {
-    max-width: 75rem;
+  .main {
+    display: flex;
+    flex-flow: column wrap;
   }
-  main .kids {
-    max-width: 75rem;
+  .main .hero {
+    width: 100vw;
+  }
+  .main .kids {
+    width: 50vw;
+    float: right;
+    margin: auto 0.5rem;
   }
 
   footer {

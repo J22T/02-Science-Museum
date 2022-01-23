@@ -35,12 +35,18 @@ header {
 }
 }
 
-main {
+.main {
+    display: flex;
+    flex-flow: column wrap;
+
     .hero {
-        max-width: 75rem;
+        width: 100vw;
     }
+
     .kids {
-        max-width: 75rem;
+        width: 50vw;
+        float: right;
+        margin: auto 0.5rem;
     }
 }
 
