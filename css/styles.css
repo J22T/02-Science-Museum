@@ -499,7 +499,7 @@ body {
   min-height: 10rem;
 }
 .nav .main .hero {
-  max-width: 10px;
+  max-width: 100%;
 }
 .nav .main h1 {
   margin: 0;
@@ -508,7 +508,7 @@ body {
   font-weight: 700;
 }
 .nav .main .kids {
-  max-width: 10px;
+  max-width: 100%;
 }
 
 .footer {
