@@ -47,8 +47,13 @@ main {
     .hero {
         max-width: 100vw;
     }
+
+    .visit {
+        display: flex;
+        flex-direction: row;
+
     .kids {
-        height: 50%;
-        width: 50%;
+        width: 100vw;
     }
+}
 }
