@@ -36,21 +36,14 @@ header {
 }
 
 
-
-main {
-    display: block;
-
-    .visit {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .kids {
-        max-width: 30rem;
-        padding: 2rem;
-    }
-}
-
 footer {
     background-color: black;
 }
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+      }

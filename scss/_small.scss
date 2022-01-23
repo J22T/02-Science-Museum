@@ -57,7 +57,6 @@ body {
 
     a {
         display: block;
-        padding: .8rem 0; /* 44 minimum height */
         color: #eee;
         text-align: left;
         padding: .9rem 2vw;
@@ -81,30 +80,26 @@ body {
 
 // MAIN
 main {
-    background-color: $primaryColor;
-    background-color: $secondaryColor;
     padding: 1rem $gutter;
+    background-color: $primaryColor;
     min-height: 10rem;
     display: block;
-    
-    .hero {
-        width: 100%;
-        margin-top: 1rem;
-   }
 
+    .hero {
+        max-width: 30%;
+    }
+    
     h1 {
         margin: 0; padding-top: 1rem;
         color: white;
         font-weight: $heavyWeight;
     }
 
-    .visit {
-     .kids {
-        width: 100%;
-        }
+    .kids {
+        max-width: 30%;
     }
-}
-} // END MAIN
+    }
+}// END MAIN
 
 
 
