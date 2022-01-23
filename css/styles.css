@@ -432,100 +432,102 @@ template {
   display: none;
 }
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+@media only screen and (min-width: 30rem) {
+  /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  /*----------- apply a natural box layout model to all elements --------------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
+  body {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
 
-.header {
-  background-color: white;
-}
-.header header {
-  padding: 0rem 2%;
-  padding: .5rem 1%;
-  display: grid;
-  grid-template-columns: 120px auto;
-}
-.header header h1 {
-  margin: 0;
-  margin-top: 2rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: black;
-}
+  header {
+    padding: 0rem 2%;
+    padding: .5rem 1%;
+    display: grid;
+    grid-template-columns: 120px auto;
+    background-color: white;
+  }
+  header h1 {
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+  }
+  header h2 {
+    display: none;
+  }
 
-.nav {
-  background-color: #111;
-  font-family: "Quicksand", sans-serif;
-}
-.nav ul {
-  margin: 0;
-  padding: 0;
-}
-.nav li {
-  list-style-type: none;
-}
-.nav li a {
-  display: block;
-  color: #eee;
-  text-align: left;
-  padding: .9rem 2vw;
-  text-decoration: none;
-  border-top: solid 1px #3f3f3f;
-}
-.nav li :hover {
-  background-color: #333;
-}
-.nav li.active {
-  background-color: #333;
-}
-.nav .main {
-  padding: 1rem 2%;
-  background-color: gray;
-  min-height: 10rem;
-}
-.nav .main .hero {
-  max-width: 100%;
-}
-.nav .main h1 {
-  margin: 0;
-  padding-top: 1rem;
-  color: white;
-  font-weight: 700;
-}
-.nav .main .kids {
-  max-width: 100%;
-}
+  .nav {
+    background-color: #111;
+    font-family: "Quicksand", sans-serif;
+  }
+  .nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  .nav li {
+    list-style-type: none;
+  }
+  .nav li a {
+    display: block;
+    color: #eee;
+    text-align: left;
+    padding: .9rem 2vw;
+    text-decoration: none;
+    border-top: solid 1px #3f3f3f;
+  }
+  .nav li :hover {
+    background-color: #333;
+  }
+  .nav li.active {
+    background-color: #333;
+  }
+  .nav .main {
+    padding: 1rem 2%;
+    background-color: gray;
+    min-height: 10rem;
+  }
+  .nav .main .hero {
+    max-width: 100%;
+  }
+  .nav .main h1 {
+    margin: 0;
+    padding-top: 1rem;
+    color: white;
+    font-weight: 700;
+  }
+  .nav .main .kids {
+    max-width: 100%;
+  }
 
-.footer {
-  background-color: black;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 2%;
-  color: white;
-}
+  .footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2%;
+    color: white;
+  }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-
 @media only screen and (min-width: 35rem) {
   .header h1 {
     margin: 0;
@@ -534,7 +536,7 @@ body {
     font-weight: 700;
     color: black;
   }
-  .header .h2 {
+  .header div h2 {
     margin: 0;
     margin-top: 1rem;
     margin: 0;
@@ -585,7 +587,7 @@ body {
   }
 }
 /* end of media query */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 75rem) {
   header, nav, main {
     max-width: 1200px;
     margin: auto;
@@ -598,7 +600,7 @@ body {
     font-weight: 700;
     color: black;
   }
-  header h2 {
+  header div h2 {
     margin: 0;
     margin-top: 1rem;
     margin: 0;

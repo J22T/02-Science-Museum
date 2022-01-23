@@ -15,14 +15,12 @@ body {
 
 
 // HEADER
-.header {
-    background-color: white;
-
     header {
         padding: 0rem $gutter;
         padding: .5rem 1%;
         display: grid;
         grid-template-columns: 120px auto;
+        background-color: white;
 
         h1 {
             margin: 0;
@@ -31,8 +29,12 @@ body {
             font-weight: $heavyWeight;
             color: black;
         }
-    }
-} // END HEADER
+
+        h2 {
+            display: none;
+        }
+
+    } // END HEADER
 
 
 
