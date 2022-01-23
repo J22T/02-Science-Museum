@@ -26,20 +26,14 @@ body {
 
         h1 {
             margin: 0;
-            margin-top: 1rem;
+            margin-top: 3rem;
             font-size: 2rem;
             font-weight: $heavyWeight;
             color: black;
         }
 
         h2 {
-            margin: 0;
-            margin-top: 1rem;
-            margin: 0;
-            color: black;
-            font-size: 1.3rem; 
-            font-weight: normal;
-            font-weight: $regularWeight;
+            display: none;
         }
     }
 } // END HEADER
@@ -94,7 +88,9 @@ main {
     display: block;
     
     .hero {
-        width: 100%; margin-top: .5rem;
+        width: 10%;
+        height: 10%;
+        margin-top: 1rem;
    }
 
     h1 {
@@ -103,13 +99,13 @@ main {
         font-weight: $heavyWeight;
     }
 
-
-
+    .visit {
      .kids {
-            height: 40%;
-            width: 40%;
+        width: 10%;
+        height: 10%;
         }
     }
+}
 } // END MAIN
 
 
@@ -117,7 +113,7 @@ main {
 
 // FOOTER
 .footer {
-    background-color: $textColor; width: 100%
+    background-color: black; width: 100%
 }
 
 footer {

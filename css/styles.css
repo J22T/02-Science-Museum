@@ -462,19 +462,13 @@ body {
 }
 .header header h1 {
   margin: 0;
-  margin-top: 1rem;
+  margin-top: 3rem;
   font-size: 2rem;
   font-weight: 700;
   color: black;
 }
 .header header h2 {
-  margin: 0;
-  margin-top: 1rem;
-  margin: 0;
-  color: black;
-  font-size: 1.3rem;
-  font-weight: normal;
-  font-weight: 300;
+  display: none;
 }
 
 .nav {
@@ -512,8 +506,9 @@ body {
   display: block;
 }
 .nav main .hero {
-  width: 100%;
-  margin-top: .5rem;
+  width: 10%;
+  height: 10%;
+  margin-top: 1rem;
 }
 .nav main h1 {
   margin: 0;
@@ -521,13 +516,13 @@ body {
   color: white;
   font-weight: 700;
 }
-.nav main .kids {
-  height: 40%;
-  width: 40%;
+.nav main .visit .kids {
+  width: 10%;
+  height: 10%;
 }
 
 .footer {
-  background-color: #002900;
+  background-color: black;
   width: 100%;
 }
 
@@ -545,6 +540,23 @@ footer {
 }
 
 @media only screen and (min-width: 35rem) {
+  .header h1 {
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+  }
+  .header h2 {
+    margin: 0;
+    margin-top: 1rem;
+    margin: 0;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-weight: 300;
+  }
+
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -566,10 +578,9 @@ footer {
     margin-top: 1rem;
   }
 
-  .hero {
-    width: 100%;
+  main {
+    display: flex;
   }
-
   main .kids {
     height: 50%;
     width: 50%;
@@ -583,12 +594,20 @@ footer {
   }
 
   header h1 {
-    font-size: 2rem;
+    margin: 0;
     margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
   }
   header h2 {
-    font-size: 1.3rem;
+    margin: 0;
     margin-top: 1rem;
+    margin: 0;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-weight: 300;
   }
 
   .nav ul {
@@ -604,8 +623,13 @@ footer {
   main {
     display: block;
   }
+  main .visit {
+    display: flex;
+    flex-direction: column;
+  }
   main .kids {
-    width: 50%;
+    max-width: 30rem;
+    padding: 2rem;
   }
 
   footer {

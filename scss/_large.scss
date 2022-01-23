@@ -5,12 +5,20 @@ margin: auto;
 
 header {
     h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: $heavyWeight;
+        color: black;
     }
     h2 {
-    font-size: 1.3rem;
-    margin-top: 1rem;
+        margin: 0;
+        margin-top: 1rem;
+        margin: 0;
+        color: black;
+        font-size: 1.3rem; 
+        font-weight: normal;
+        font-weight: $regularWeight;
     }
 }
 
@@ -27,11 +35,19 @@ header {
 }
 }
 
+
+
 main {
     display: block;
 
+    .visit {
+        display: flex;
+        flex-direction: column;
+    }
+
     .kids {
-        width: 50%;
+        max-width: 30rem;
+        padding: 2rem;
     }
 }
 
