@@ -38,16 +38,6 @@ header {
 .main {
     display: flex;
     flex-flow: column wrap;
-
-    .hero {
-        width: 100vw;
-    }
-
-    .kids {
-        width: 50vw;
-        float: right;
-        margin: auto 0.5rem;
-    }
 }
 
 

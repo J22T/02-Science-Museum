@@ -33,7 +33,11 @@ body {
         }
 
         h2 {
-            display: none;
+            margin: 0;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: $heavyWeight;
+            color: black;
         }
 
     } // END HEADER
@@ -84,21 +88,23 @@ main {
     background-color: $primaryColor;
     min-height: 10rem;
 
-    .hero {
-        width: 50%;
+    img {
+        .hero {
+            width: 50px;
+        }
+
+        .kids {
+            width: 50px;
+        }
+        
     }
-    
+
     h1 {
         margin: 0; padding-top: 1rem;
         color: white;
         font-weight: $heavyWeight;
     }
 
-    .kids {
-        img {
-            width: 100%;
-        }
-    }
 }
 }// END MAIN
 
