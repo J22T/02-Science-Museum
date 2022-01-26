@@ -1,52 +1,99 @@
-.header {
-    h1 {
-        margin: 0;
-        margin-top: 1rem;
-        font-size: 2rem;
-        font-weight: $heavyWeight;
-        color: black;
-    }
-    div h2 {
-        margin: 0;
-        margin-top: 1rem;
-        margin: 0;
-        color: black;
-        font-size: 1.3rem; 
-        font-weight: normal;
-        font-weight: $regularWeight;
-    }
-}
-
 nav {
-        ul {
-            display: flex;
-            justify-content: space-between;
-            margin-left: 2%;
-        }
-        ul li {width: auto;}
-        ul li a {
-            border: none;
-            padding: .5rem 1rem;
-        header h1 {
-            font-size: 2rem;
-            margin-top: 1rem;
-        }
-        header h2 {
-            font-size: 1.3rem;
-            margin-top: 1rem;
-        }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    } // END UL
+
+    ul li a {
+        border: none;
+        padding: 1.5rem;
+    }
+} // END NAV
+
+
+
+div#header{background-color: $primaryColor;}
+header {
+
+    padding: 1rem $gutter;
+
+    img {
+        float: left;
+        margin: 0;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+    } // END OF H1
+
+    h2 {
+        margin: 1rem; 
+        font-size: 1.2rem; 
+        font-weight: $regularWeight;
+    } //END OF H2
+} //END OF HEADER
+
+
+
+// MAIN
+div#main {display: block;}
+main {
+
+    h1 {
+        color: $secondaryColor;
+        font-weight: $heavyWeight;
+    }
+
+    figure.hero {
+        width: 100vw;
+        margin: 0 0 0 0;
+    }
+
+    figure.hero img {
+        width: 100%;
+    }
+
+    figure.kids {
+        width: 50%;
+        margin: 0 0 0 2%;
+        float: right;
+    }
+
+    figure.kids img {
+        width: 100%;
     }
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-      }
+
+
+
+
+
+
+
+
+    // nav li {width: 25%;
+    //     float: left;
+    //     display: flex;
+    //     flex-flow: space-between;
+    // }
+    
+    // main figure {
+    //     float: right; 
+    //     width: 48%; 
+    //     margin-left: 2%;
+    //     padding-bottom: .5rem;
+    // }
+    
+    // div.news {
+    //     clear: both;
+    //     column-count: 2;
+    //     column-rule: 1px solid #ddd;
+    // }
+    

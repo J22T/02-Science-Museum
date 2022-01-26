@@ -4,77 +4,74 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
-
-// BODY
+/* body rules */
 body {
     font-family: $fontFamily;
     font-weight: $regularWeight;
     font-size: 16px;
-} // END BODY
+}
 
 
 
 
-// HEADER
-    header {
-        padding: 0rem $gutter;
-        padding: .5rem 1%;
-        display: grid;
-        grid-template-columns: 120px auto;
-        background-color: white;
+div#header{background-color: $primaryColor;}
+header {
 
-        h1 {
-            margin: 0;
-            margin-top: 2rem;
-            font-size: 2rem;
-            font-weight: $heavyWeight;
-            color: black;
-        }
+    padding: 1rem $gutter;
 
-        h2 {
-            margin: 0;
-            margin-top: 1rem;
-            font-size: 2rem;
-            font-weight: $heavyWeight;
-            color: black;
-        }
-
-    } // END HEADER
-
-
-
-
-// NAV
-
-.nav {
-        background-color: #111;
-        font-family: $fontFamily;
-
-    ul {
+    img {
+        float: left;
         margin: 0;
-        padding: 0;
+        padding-right: 1rem;
     }
 
-    li {
-        list-style-type: none;
+    h1 {
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+    } // END OF H1
 
-    a {
-        display: block;
-        color: #eee;
+    h2 {
+       margin: 1rem; 
+       font-size: 1.2rem; 
+       font-weight: $regularWeight;
+     } //END OF H2
+} //END OF HEADER
+
+
+
+
+
+div#nav {background-color: #111;}
+nav {
+
+        ul {
+        margin:0;
+        padding: 0;
+        }
+
+        li {
+        list-style-type: none;
+        }
+
+        ul li a {
         text-align: left;
-        padding: .9rem 2vw;
+        display: block;
+        padding: 1rem 1rem; /*44px min*/
+        color: #eee;
         text-decoration: none;
         border-top: solid 1px rgb(63, 63, 63);
-    }
-    :hover {
-        background-color: #333;
-    }
-}
-    li.active {
+        }
+
+        ul li a:hover {
+        background-color: #444;
+        }
+
+        ul li.active a {
         background-color: #333;
         }
 
+} // END OF NAV
 
 
 
@@ -83,43 +80,46 @@ body {
 
 
 // MAIN
+div#main {display: block;}
 main {
-    padding: 1rem $gutter;
-    background-color: $primaryColor;
-    min-height: 10rem;
-
-    img {
-        .hero {
-            width: 50px;
-        }
-
-        .kids {
-            width: 50px;
-        }
-        
-    }
 
     h1 {
-        margin: 0; padding-top: 1rem;
-        color: white;
+        color: $secondaryColor;
         font-weight: $heavyWeight;
     }
 
+    figure.hero {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    figure.hero img {
+        width: 100%;
+    }
+
+    figure.kids {
+        width: 100%;
+        margin: 0 0 0 2%;
+        float: right;
+    }
+
+    figure.kids img {
+        width: 100%;
+    }
 }
-}// END MAIN
+
+
+// END OF MAIN
 
 
 
 
-// FOOTER
-.footer {
-    background-color: black;
-    width: 100%;
+div#footer {background-color: $primaryColor;}
+footer {
     text-align: center;
     padding: 1rem $gutter;
-    color: white;
 }
- // END FOOTER
+
 
 
 
@@ -130,4 +130,4 @@ main {
   content: "";
   display: table;
   clear: both;
-    }
+}

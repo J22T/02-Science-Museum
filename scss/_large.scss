@@ -1,54 +1,109 @@
-header, nav, main {
-max-width: 1200px;
-margin: auto;
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: auto;
 }
 
-header {
-    h1 {
-        margin: 0;
-        margin-top: 1rem;
-        font-size: 2rem;
-        font-weight: $heavyWeight;
-        color: black;
-    }
-    div h2 {
-        margin: 0;
-        margin-top: 1rem;
-        margin: 0;
-        color: black;
-        font-size: 1.3rem; 
-        font-weight: normal;
-        font-weight: $regularWeight;
-    }
-}
 
-.nav {
+// NAV
+nav {
     ul {
-    padding-left: 2%;
-    display: flex;
-    justify-content: center;
-
-    li a {
-        padding: .7rem 2rem;
-        font-size: 1rem;
+        display: flex;
+        justify-content: center;
     }
 }
+
+nav ul li a {
+    padding: 1.5rem;
+}
+// END NAV
+
+
+
+
+div#header{background-color: $primaryColor;}
+header {
+
+    padding: 1rem $gutter;
+
+    img {
+        float: left;
+        margin: 0;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+    } // END OF H1
+
+    h2 {
+        margin: 1rem; 
+        font-size: 1.2rem; 
+        font-weight: $regularWeight;
+    } //END OF H2
+} //END OF HEADER    
+
+
+
+
+
+// MAIN
+div#main {display: block;}
+main {
+
+h1 {
+    color: $secondaryColor;
+    font-weight: $heavyWeight;
 }
 
-.main {
-    display: flex;
-    flex-flow: column wrap;
+figure.hero {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+figure.hero img {
+    width: 100%;
+}
+
+figure.kids {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.kids img {
+    width: 100%;
+}
 }
 
 
-footer {
-    background-color: black;
-}
 
 
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-      }
+
+
+
+
+
+
+// nav ul { padding-left: $gutter;
+// }
+
+
+
+
+// nav li { width:auto;
+//     display: flex;
+//     flex-flow: space-between;
+// }
+
+
+// nav a { padding: .5rem 1rem;
+// }
+
+// main figure { width: 31%;
+// }
+
+// div.news { column-count: 3;
+// }
