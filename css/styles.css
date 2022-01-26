@@ -457,7 +457,7 @@ div#header {
 }
 
 header {
-  padding: 1rem 2%;
+  padding: 3rem 2%;
 }
 header img {
   float: left;
@@ -466,6 +466,7 @@ header img {
 }
 header h1 {
   margin: 1rem;
+  padding-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -473,6 +474,7 @@ header h2 {
   margin: 1rem;
   font-size: 1.2rem;
   font-weight: 300;
+  display: none;
 }
 
 div#nav {
@@ -573,6 +575,7 @@ footer {
     margin: 1rem;
     font-size: 1.2rem;
     font-weight: 300;
+    display: block;
   }
 
   div#main {
@@ -636,6 +639,7 @@ footer {
     margin: 1rem;
     font-size: 1.2rem;
     font-weight: 300;
+    display: block;
   }
 
   div#main {
