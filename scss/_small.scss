@@ -16,7 +16,6 @@ body {
 
 div#header{background-color: $primaryColor;}
 header {
-
     padding: 3rem $gutter;
 
     img {
@@ -47,7 +46,10 @@ header {
 div#nav {
     background-color: #111;
 }
+
 nav {
+
+    margin-bottom: 1rem;
 
         ul {
         margin:0;

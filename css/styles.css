@@ -481,6 +481,9 @@ div#nav {
   background-color: #111;
 }
 
+nav {
+  margin-bottom: 1rem;
+}
 nav ul {
   margin: 0;
   padding: 0;
