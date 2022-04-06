@@ -44,7 +44,9 @@ header {
 
 
 
-div#nav {background-color: #111;}
+div#nav {
+    background-color: #111;
+}
 nav {
 
         ul {
@@ -116,7 +118,9 @@ main {
 
 
 
-div#footer {background-color: $primaryColor;}
+div#footer {
+    background-color: $primaryColor;
+}
 footer {
     text-align: center;
     padding: 1rem $gutter;
