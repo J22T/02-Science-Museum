@@ -14,8 +14,12 @@ body {
 
 
 
-div#header{background-color: $primaryColor;}
+div#header {
+    background-color: $primaryColor;
+}
+
 header {
+
     padding: 3rem $gutter;
 
     img {
@@ -26,8 +30,9 @@ header {
 
     h1 {
         margin: 1rem;
+        margin-top: 3rem;
         padding-top: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         font-weight: $heavyWeight;
     } // END OF H1
 
